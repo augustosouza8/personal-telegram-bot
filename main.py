@@ -25,7 +25,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     Sends a welcome message to the user.
     """
-    greeting = "So great to see you here! How can I make you smile today? Let’s begin our love story."
+    greeting = "[en] So great to see you here! How can I make you smile today? Let’s begin our love story.\n [pt] Que ótimo ter você por aqui! Sou muuuuito melhor do que o bate-papo da Oul, está duvidando? Então bora começar a nossa história de amor!"
+
     await update.message.reply_text(greeting)
 
 async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
