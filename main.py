@@ -27,7 +27,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     Sends a welcome message using the bot's pre-set personality.
     """
     # Retrieve the greeting from the base personality settings.
-    greeting = personality.base_personality.get("greeting", "Hello!")
+    greeting = "So great to see you here! How can I make you smile today? Let’s begin our love story."
     await update.message.reply_text(greeting)
 
 

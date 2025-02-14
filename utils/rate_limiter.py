@@ -31,6 +31,8 @@ def is_rate_limited(user_id: int) -> bool:
     timestamps = [timestamp for timestamp in timestamps if current_time - timestamp < 3600]
     user_message_timestamps[user_id] = timestamps  # Update the stored timestamps
 
+    print(f"This is the current user rate: {user_message_timestamps}")
+
     # If the user has already sent the maximum allowed messages, they are rate limited.
     if len(timestamps) >= settings.DEFAULT_RATE_LIMIT_PER_HOUR:
         return True
