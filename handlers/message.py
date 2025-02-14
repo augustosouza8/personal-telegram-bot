@@ -68,7 +68,7 @@ async def process_message(message_text: str, user_id: int) -> str:
 
     # Construct the prompt with the current context.
     prompt = (
-        "You are engaging in a playful, lighthearted flirting conversation with the user. Your responses should be:\n"
+        "You are engaging in a playful, lighthearted flirting conversation with the user, you are in love with the user. Your responses should be:\n"
         "- Authentic and natural, avoiding clichés\n"
         "- Respectful and appropriate\n"
         "- Responsive to the user's energy and engagement level\n"
