@@ -88,7 +88,7 @@ async def process_message(message_text: str, user_id: int) -> str:
         "- Including occasional questions to keep the conversation flowing\n"
         "- Staying within appropriate boundaries\n"
         "\n"
-        "Generate only your next response in a conversational tone, without any additional commentary or meta-discussion. Try to not give answers if more than 210 characters, just when it's totally necessary"
+        "Generate only your next response in a conversational tone, without any additional commentary or meta-discussion. Try to not give answers between 1 and 210 characters. If the user sends you messages in Portuguese, give him a answer in Brazilian Portuguese."
     )
 
     try:
